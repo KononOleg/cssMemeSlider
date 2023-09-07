@@ -34,6 +34,7 @@ h1 {
 
 .text__wrapper {
   overflow: hidden;
+  max-width: 200px;
 }
 
 .text__carousel {
@@ -76,4 +77,43 @@ h1 {
 
 .input:checked + .label {
   background: white;
+}
+
+.input-wrapper:has(#slide1:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(0);
+}
+
+.input-wrapper:has(#slide2:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(-100%);
+}
+
+.input-wrapper:has(#slide3:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(-200%);
+}
+
+.input-wrapper:has(#slide4:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(-300%);
+}
+.input-wrapper:has(#slide5:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(-400%);
+}
+
+.input-wrapper:has(#slide1:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(0);
+}
+
+.input-wrapper:has(#slide2:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(-100%);
+}
+
+.input-wrapper:has(#slide3:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(-200%);
+}
+
+.input-wrapper:has(#slide4:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(-300%);
+}
+
+.input-wrapper:has(#slide5:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(-400%);
 }
