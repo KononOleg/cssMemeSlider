@@ -1,0 +1,33 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.slider__carousel {
+  display: flex;
+  transition: 0.3s;
+}
+
+.slider__image {
+  width: 100%;
+  border-radius: 5%;
+  flex: 0 0 100%;
+}
