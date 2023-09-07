@@ -32,6 +32,22 @@ h1 {
   flex: 0 0 100%;
 }
 
+.text__wrapper {
+  overflow: hidden;
+}
+
+.text__carousel {
+  display: flex;
+  transition: 0.3s;
+}
+
+.text {
+  color: white;
+  font-size: 24px;
+  flex: 0 0 100%;
+  margin: 0;
+}
+
 .input-wrapper {
   display: flex;
   gap: 5px;
