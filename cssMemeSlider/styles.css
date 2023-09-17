@@ -1,0 +1,155 @@
+body {
+  box-sizing: border-box;
+  background: #2c2c2c;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10%;
+  max-width: 50rem;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  margin: 2% auto;
+}
+
+.slider__wrapper {
+  overflow: hidden;
+  order: 1;
+  margin: 0 auto;
+}
+
+.slider__carousel {
+  display: flex;
+  transition: 0.3s;
+}
+
+.slider__image {
+  width: 100%;
+  border-radius: 5%;
+  flex: 0 0 100%;
+}
+
+.text__wrapper {
+  overflow: hidden;
+  max-width: 60%;
+  order: 2;
+}
+
+.text__carousel {
+  display: flex;
+
+  transition: 0.3s;
+}
+
+.text {
+  color: white;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  flex: 0 0 100%;
+  margin: 0 0 0 1%;
+}
+
+.input-wrapper {
+  display: flex;
+  margin-left: auto;
+  max-width: 40%;
+  order: 3;
+}
+
+.input {
+  display: none;
+}
+
+.label {
+  background-clip: content-box;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.4rem;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  background-clip: content-box;
+  background-color: #14ae5c;
+  outline: 0.1rem solid transparent;
+  outline-offset: -0.4rem;
+}
+
+.label:hover {
+  background-color: #0b5a30;
+}
+
+.label:active {
+  background-color: #0b5a30;
+}
+
+.input:checked + .label {
+  background: transparent;
+  outline: 0.1rem solid #14ae5c;
+  pointer-events: none;
+}
+
+.input-wrapper:has(#slide1:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(0);
+}
+
+.input-wrapper:has(#slide2:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(-100%);
+}
+
+.input-wrapper:has(#slide3:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(-200%);
+}
+
+.input-wrapper:has(#slide4:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(-300%);
+}
+.input-wrapper:has(#slide5:checked) ~ .slider__wrapper .slider__carousel {
+  transform: translateX(-400%);
+}
+
+.input-wrapper:has(#slide1:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(0);
+}
+
+.input-wrapper:has(#slide2:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(-101%);
+}
+
+.input-wrapper:has(#slide3:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(-202%);
+}
+
+.input-wrapper:has(#slide4:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(-303%);
+}
+
+.input-wrapper:has(#slide5:checked) ~ .text__wrapper .text__carousel {
+  transform: translateX(-404%);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .text__wrapper {
+    max-width: 100%;
+    order: 3;
+  }
+
+  .input-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    order: 2;
+  }
+}

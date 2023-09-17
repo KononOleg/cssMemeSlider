@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>CSS Meme Slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1>CSS Meme Slider</h1>
+        <div class="input-wrapper">
+          <input class="input" type="radio" name="radio" id="slide1" checked />
+          <label class="label" for="slide1"></label>
+          <input class="input" type="radio" name="radio" id="slide2" />
+          <label class="label" for="slide2"></label>
+          <input class="input" type="radio" name="radio" id="slide3" />
+          <label class="label" for="slide3"></label>
+          <input class="input" type="radio" name="radio" id="slide4" />
+          <label class="label" for="slide4"></label>
+          <input class="input" type="radio" name="radio" id="slide5" />
+          <label class="label" for="slide5"></label>
+        </div>
+        <div class="slider__wrapper">
+          <div class="slider__carousel">
+            <img class="slider__image" src="./assets/mem-1.webp" alt="image" />
+            <img class="slider__image" src="./assets/mem-2.webp" alt="image" />
+            <img class="slider__image" src="./assets/mem-3.webp" alt="image" />
+            <img class="slider__image" src="./assets/mem-4.webp" alt="image" />
+            <img class="slider__image" src="./assets/mem-5.webp" alt="image" />
+          </div>
+        </div>
+        <div class="text__wrapper">
+          <div class="text__carousel">
+            <p class="text">These IT memes are full of bugs</p>
+            <p class="text">It’s time to Google more IT memes…</p>
+            <p class="text">These IT memes need a hard reset too…</p>
+            <p class="text">IT memes…Now with video!</p>
+            <p class="text">Just A/B testing IT memes…</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
