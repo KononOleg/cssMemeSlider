@@ -7,7 +7,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 10%;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 .wrapper {
   display: flex;
@@ -34,14 +34,15 @@ h1 {
 }
 
 .slider__image {
-  width: 100%;
+  width: auto;
+  height: auto;
   border-radius: 5%;
   flex: 0 0 100%;
 }
 
 .text__wrapper {
   overflow: hidden;
-  max-width: 50%;
+  max-width: 60%;
   order: 2;
 }
 
@@ -61,7 +62,7 @@ h1 {
 .input-wrapper {
   display: flex;
   margin-left: auto;
-  max-width: 50%;
+  max-width: 40%;
   order: 3;
 }
 
@@ -136,7 +137,7 @@ h1 {
   transform: translateX(-400%);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 2rem;
   }
