@@ -34,8 +34,7 @@ h1 {
 }
 
 .slider__image {
-  width: auto;
-  height: auto;
+  width: 100%;
   border-radius: 5%;
   flex: 0 0 100%;
 }
